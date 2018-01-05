@@ -1,3 +1,28 @@
 <div *ngIf="artist">
-      {{artist.name}}
+      <header>
+        <div *ngIf="artist.images.length > 0">
+          <img class = "img-thumbnail rounded-circle" src = "{{artist.images[0].url}}">
+        </div>
+        <h1>{{artist.name}}</h1>
+        <p *ngIf = "artist.genres.length >0">
+          Genres:<span *ngFor = "let gen of artist.genres">{{artist.genres}}</span>
+        </p>
+      </header>
+      <div *ngFor="let album of artist.album">
+          <div class="card">
+            <div class="card-header">
+              <!-- <h4>{{album.name}}</h4> -->
+            </div>
+<!--             <div class ="card-body">
+              <div class = "row">
+                <div class = "col-md-12">
+                  <strong>Genres:</strong>
+                  <span *ngFor="let genre of res.genres">
+                    {{res.genres}}
+                  </span>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
 </div>

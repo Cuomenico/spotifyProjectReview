@@ -5,4 +5,5 @@ export class Artist {
   name: string;
   genres: any;
   album: Album[];
+  images: any;
 }

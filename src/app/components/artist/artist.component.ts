@@ -25,8 +25,15 @@ export class ArtistComponent implements OnInit {
       this._searchService.getArtist(id)
       .subscribe(artist => {
         this.artist = artist;
+        console.log(this.artist.images);
+      });
+      this._searchService.getAlbum(id)
+      .subscribe(albums => {
+        this.album = albums.items;
+        console.log(this.artist.album);
       });
     });
+
   }
 
 }
