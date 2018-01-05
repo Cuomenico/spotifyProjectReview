@@ -1,0 +1,90 @@
+{
+  "Album": {
+    "method": "GET",
+    "Url": "/v1/albums/",
+    "description": "Get an Album concat Url + id"
+  },
+  "Albums": {
+    "method": "GET",
+    "Url": "/v1/albums",
+    "description": "Get several Albums "
+  },
+  "AlbumsTrack": {
+    "method": "GET",
+    "UrlStart": "/v1/albums/",
+    "UrlEnd": "/tracks",
+    "description": "Get an Album's Tracks concat UrlStart + id + UrlEnd"
+  },
+  "Artist": {
+    "method": "GET",
+    "UrlStart": "/v1/artists/",
+    "UrlEnd": "",
+    "description": ""
+  },
+  "Artists": {
+    "method": "GET",
+    "UrlStart": "/v1/artists",
+    "UrlEnd": "",
+    "description": ""
+  },
+  "ArtistAlbums": {
+    "method": "GET",
+    "UrlStart": "/v1/artists/",
+    "UrlEnd": "/albums",
+    "description": ""
+  },
+  "ArtistTopTracks": {
+    "method": "GET",
+    "UrlStart": "/v1/artists/",
+    "UrlEnd": "/top-tracks",
+    "description": ""
+  },
+  "ArtistRelArtists": {
+    "method": "GET",
+    "UrlStart": "/v1/artists/",
+    "UrlEnd": "/related-artists",
+    "description": ""
+  },
+  "Track": {
+    "method": "GET",
+    "UrlStart": "/v1/tracks/",
+    "UrlEnd": "",
+    "description": ""
+  },
+  "Tracks": {
+    "method": "GET",
+    "UrlStart": "/v1/tracks",
+    "UrlEnd": "",
+    "description": ""
+  },
+  "AudioFeature": {
+    "method": "GET",
+    "UrlStart": "/v1/audio-features/",
+    "UrlEnd": "",
+    "description": ""
+  },
+  "AudioFeatures": {
+    "method": "GET",
+    "UrlStart": "/v1/audio-features",
+    "UrlEnd": "",
+    "description": ""
+  },
+  "AudioAnalysis": {
+    "method": "GET",
+    "UrlStart": "/v1/audio-analysis/",
+    "UrlEnd": "",
+    "description": ""
+  },
+  "Search": {
+    "method": "GET",
+    "UrlStart": "https://api.spotify.com/v1/search/?q=",
+    "UrlEnd": "",
+    "description": ""
+  },
+  "": {
+    "method": "",
+    "UrlStart": "",
+    "UrlEnd": "",
+    "description": ""
+  }
+}
