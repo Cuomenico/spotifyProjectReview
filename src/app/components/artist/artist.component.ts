@@ -30,7 +30,10 @@ export class ArtistComponent implements OnInit {
       this._searchService.getAlbum(id)
       .subscribe(albums => {
         this.album = albums.items;
-        console.log(this.artist.album);
+        console.log(this.album.length);
+        for (let i = 0; i < this.album.length; i++) {
+          console.log(this.album[i].name);
+        }
       });
     });
 
