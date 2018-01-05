@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  font-family: "Neucha", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .5rem;
+  font-family: "Cabin Sketch", cursive;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
+.bg-primary {
+  background-color: #333 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(255, 255, 255);
+}
+

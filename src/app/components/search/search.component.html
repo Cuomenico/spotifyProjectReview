@@ -1,0 +1,43 @@
+<div class ="container">
+  <h1 class ="appTitle">Need Music?</h1>
+  <p class ="lead">
+    Use this app to browse new release and find your favorite songs
+    <br>
+    All you get is this text and mostly barebones HTML document
+  </p>
+</div>
+
+<form>
+  <div class="form-group">
+    <input class="form-control" type="text" placeholder="Search Artist..." [(ngModel)]="searchStr" name = "searchStr" (keyup)="searchMusic()">
+  </div>
+</form>
+
+<div *ngIf = "searchArtist">
+  <div *ngFor="let res of searchArtist">
+    <div class="card">
+      <div class="card-header">
+        <h4><a routerLink="/artist/{{res.id}}">{{res.name}}</a></h4>
+      </div>
+      <div class ="card-body">
+        <div class = "row">
+          <div class = "col-md-12">
+            <strong>Genres:</strong>
+            <span *ngFor="let genre of res.genres">
+              {{res.genres}}
+            </span>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+</div>
+
+<!-- <div *ngIf = "!searchArtist || (searchArtist !== undefined && searchArtist.length===0) ">
+  <div class="card">
+    <div class="card-header">
+      <h5>No results found</h5>
+    </div>
+  </div>
+</div>
+ -->

@@ -1,0 +1,15 @@
+.appTitle{
+  margin-top:20px;
+}
+
+.card{
+  margin-bottom:10px;
+}
+
+.card-header{
+  background-color: #3c3b3be0;
+}
+
+.card-body{
+  background-color: #dee2e673;
+}
