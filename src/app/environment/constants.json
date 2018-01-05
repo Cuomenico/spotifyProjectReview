@@ -77,13 +77,13 @@
   },
   "Search": {
     "method": "GET",
-    "UrlStart": "https://api.spotify.com/v1/search/?q=",
+    "UrlStart": "/search/?q=",
     "UrlEnd": "",
     "description": ""
   },
-  "": {
+  "BaseUrl": {
     "method": "",
-    "UrlStart": "",
+    "UrlStart": "https://api.spotify.com/v1",
     "UrlEnd": "",
     "description": ""
   }

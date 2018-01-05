@@ -17,17 +17,16 @@ export class SearchService {
 
   searchMusic(str: string, type= 'artist') {
     console.log(api.Album);
-    this.searchUrl = api.Search.UrlStart + str +
-    '&type=' + type + '&limit=20';
+    this.searchUrl = 'https://api.spotify.com/v1/search?q='
 
-    return this._http.get(this.searchUrl, {headers: this.headers})
+    return this._http.get(api.BaseUrl + api.Search.UrlStart + str +'&type=' + type + '&limit=20', {headers: this.headers})
     .map( res => res.json());
   }
 
   getArtist( id: string) {
     this.artistUrl = 'https://api.spotify.com/v1/artists/' + id;
 
-    return this._http.get(this.artistUrl,  {headers: this.headers})
+    return this._http.get(api.BaseUrl.UrlStart + api.Artist.UrlStart +id,  {headers: this.headers})
     .map(res => res.json());
   }
 }
