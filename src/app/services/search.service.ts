@@ -1,7 +1,9 @@
+import { album } from './../Class/album';
+import { environment } from './../../environments/environment.prod';
 import { Injectable } from '@angular/core';
 import { Http, Headers, RequestOptions } from '@angular/http';
 import 'rxjs/add/operator/map';
-
+import * as api from '../environment/constants.json';
 import { Artist } from '../Class/artist';
 
 @Injectable()
@@ -14,6 +16,7 @@ export class SearchService {
   constructor(private _http: Http) {}
 
   searchMusic(str: string, type= 'artist') {
+    console.log(api.Album);
     this.searchUrl = 'https://api.spotify.com/v1/search?q=' + str +
     '&type=' + type + '&limit=20';
 

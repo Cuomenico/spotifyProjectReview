@@ -3,7 +3,7 @@ import { Router, ActivatedRoute} from '@angular/router';
 
 import { SearchService } from '../../services/search.service';
 import { Artist } from '../../Class/artist';
-import { Album } from '../../Class/album';
+import { album } from '../../Class/album';
 
 @Component({
   selector: 'app-artist',
@@ -13,7 +13,7 @@ import { Album } from '../../Class/album';
 export class ArtistComponent implements OnInit {
   id: string;
   artist: Artist;
-  album: Album[];
+  album: album[];
 
   constructor( private _searchService: SearchService,
                private _route: ActivatedRoute) { }
