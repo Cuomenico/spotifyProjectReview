@@ -1,9 +1,9 @@
-import { Album } from '../Class/album';
+import { album } from '../Class/album';
 
 export class Artist {
   id: number;
   name: string;
   genres: any;
-  album: Album[];
+  album: album[];
   images: any;
 }
