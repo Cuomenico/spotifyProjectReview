@@ -17,7 +17,7 @@ export class SearchService {
 
   searchMusic(str: string, type= 'artist') {
     console.log(api.Album);
-    this.searchUrl = 'https://api.spotify.com/v1/search?q=' + str +
+    this.searchUrl = api.Search.UrlStart + str +
     '&type=' + type + '&limit=20';
 
     return this._http.get(this.searchUrl, {headers: this.headers})
