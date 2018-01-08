@@ -1,12 +1,14 @@
 {
   "Album": {
     "method": "GET",
-    "Url": "/v1/albums/",
+    "UrlStart": "/v1/albums/",
+    "UrlEnd":"",
     "description": "Get an Album concat Url + id"
   },
   "Albums": {
     "method": "GET",
-    "Url": "/v1/albums",
+    "UrlStart": "/v1/albums",
+    "UrlEnd":"",
     "description": "Get several Albums "
   },
   "AlbumsTrack": {

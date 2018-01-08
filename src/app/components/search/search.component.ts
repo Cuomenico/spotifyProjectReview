@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import 'rxjs/Observable';
 
 import { SearchService } from '../../services/search.service';
-import { Artist } from '../../Class/artist';
+import { artist } from '../../Class/artist';
 
 @Component({
   selector: 'app-search',
@@ -12,7 +12,7 @@ import { Artist } from '../../Class/artist';
 export class SearchComponent {
 
   @Input() searchStr: string;
-  searchArtist: Artist[];
+  searchArtist: artist[];
 
   constructor(private searchService: SearchService) {
     console.clear();

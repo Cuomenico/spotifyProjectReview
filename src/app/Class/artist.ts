@@ -1,6 +1,6 @@
 import { album } from '../Class/album';
 
-export class Artist {
+export class artist {
   id: number;
   name: string;
   genres: any;
