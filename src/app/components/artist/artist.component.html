@@ -7,21 +7,25 @@
         <p *ngIf = "artist.genres.length >0">
           Genres:<span *ngFor = "let gen of artist.genres">{{artist.genres}}</span>
         </p>
+        <p *ngIf = "artist.genres.length == 0">
+          No Genres
+        </p>
       </header>
 
       <div class="artist-albums">
         <div class = "row">
-          <div *ngFor="let album of albums">
+          <div *ngFor="let alb of album">
             <div class = "col-md-3">
               <div class = "album well">
                 <div class = "img-thumb-container">
-                  <img class = "album-thumb img-thumbnail-album" src="{{album.images[0].url}}">
+                  <img class = "album-thumb img-thumbnail-album" src="{{alb.images[0].url}}">
+
                 </div>
                 <div class = "album-title-container">
-                  <h6>{{album.name}}</h6>
+                  <h6>{{alb.name}}</h6>
                 </div>
                 <div class = "detail-album-container">
-                  <a class="btn btn-default btn-block" routerLink="/albums/{{album.id}}">View Details</a>
+                  <a class="btn btn-default btn-block" routerLink="/albums/{{alb.id}}">View Details</a>
                 </div>
               </div>
             </div>

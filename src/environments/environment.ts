@@ -6,8 +6,6 @@
 export const environment = {
   production: false
 };
-
-
 export const Album = {
     method: "GET",
     UrlStart: "/v1/albums/",
