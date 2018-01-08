@@ -6,7 +6,6 @@
 export const environment = {
   production: false
 };
-pippo
 export const Album = {
     method: "GET",
     UrlStart: "/v1/albums/",
