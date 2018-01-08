@@ -1,14 +1,19 @@
+import { MyXHRBackend } from './auth.service';
+import { SpotifyConfig } from 'angular2-spotify';
 import * as ApiConst from '../../environments/environment';
 import { Injectable } from '@angular/core';
-import { Http, Headers, RequestOptions } from '@angular/http';
+import { Request, XHRBackend, RequestOptions, Response, Http, RequestOptionsArgs, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
+import { Observable } from 'rxjs/Observable';
 import { artist } from '../Class/artist';
 @Injectable()
 export class SearchService {
-  private accessToken = 'BQAVqAcrBKwXZLBkAMPEOpJ_Qgc1H3r-uv9Fg-Dfeqq6ui-AL6rDw9dEisngjMxyPnoLFTErfW6FT8IECs1C68rpLc0gMtEN1jU_ouZ80-Y6qkTOPqGS4DRUYev9VUfT4DNpSB17Q5f3FezbPFjYvg9Qs1_iiYg';
+  private accessToken = 'QALAKJMfgdFCOTq9InOHulBQQV_dbkNGm-68xxv_cuINsJ6MWgJS3voTuLEbOj2wDlGrq1Gi9BzKMPc1gQ4TV3YSO5gIM4fxoXJNHwD-acpuWkcIQRvDPllP-_LycuLebHukvOuCExgf6qs161SXVTUH8lQoyoE_GpFwfZgkBpG4AVGMg';
   private headers = new Headers({'Authorization': 'Bearer ' + this.accessToken});
   private _apiConst = ApiConst;
-  constructor(private _http: Http) {  }
+  constructor(private _http: Http) {
+
+   }
 
   searchMusic(str: string, type= 'artist') {
     return this._http.get(this._apiConst.BaseUrl.UrlStart + this._apiConst.Search.UrlStart + str + '&type=' + type + '&limit=20', {headers: this.headers})
