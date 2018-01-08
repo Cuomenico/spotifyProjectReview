@@ -2,7 +2,7 @@ import { Component, OnInit} from '@angular/core';
 import { Router, ActivatedRoute} from '@angular/router';
 
 import { SearchService } from '../../services/search.service';
-import { Artist } from '../../Class/artist';
+import { artist } from '../../Class/artist';
 import { album } from '../../Class/album';
 
 @Component({
@@ -12,8 +12,13 @@ import { album } from '../../Class/album';
 })
 export class ArtistComponent implements OnInit {
   id: string;
+<<<<<<< HEAD
   artist: Artist;
   albums: album[];
+=======
+  artist: artist;
+  album: album[];
+>>>>>>> 5ce0917a546ec0c75180024634d8c62cdd530d32
 
   constructor( private _searchService: SearchService,
                private _route: ActivatedRoute) { }
