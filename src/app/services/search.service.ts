@@ -9,7 +9,7 @@ export class SearchService {
   private searchUrl: string;
   private artistUrl: string;
   private albumUrl: string;
-  private accessToken = 'BQAodYbEUcFje-xoNgbMIdMZoXP2GIKxuatsFbbMYJUI0vxsNmCR3FeGOw17A5JMIUYsDYNnUOAxosly9xB1NyYMGXws5SBVqA8xHbGlWut0nFcHeDkeGWXrzMkdT4qCQ7oc7VwNtTdtH9TwfLQ57oWHdjq5dDU';
+  private accessToken = 'BQAVqAcrBKwXZLBkAMPEOpJ_Qgc1H3r-uv9Fg-Dfeqq6ui-AL6rDw9dEisngjMxyPnoLFTErfW6FT8IECs1C68rpLc0gMtEN1jU_ouZ80-Y6qkTOPqGS4DRUYev9VUfT4DNpSB17Q5f3FezbPFjYvg9Qs1_iiYg';
   private headers = new Headers({'Authorization': 'Bearer ' + this.accessToken});
 
   constructor(private _http: Http) {}

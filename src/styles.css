@@ -10,13 +10,7 @@ body {
   background-color: #fff;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  margin-bottom: .5rem;
-  font-family: "Cabin Sketch", cursive;
-  font-weight: 500;
-  line-height: 1.2;
-  color: inherit;
-}
+
 
 .bg-primary {
   background-color: #333 !important;
@@ -26,3 +20,78 @@ body {
   color: rgb(255, 255, 255);
 }
 
+.main{
+  padding:30px;
+}
+
+.artist-header{
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: #333 1px solid;
+}
+
+.artist-thumb{
+  width:80px;
+  height: auto;
+  float:left;
+  margin-right: 10px;
+}
+
+.artist-albums .well{
+  margin-bottom:20px;
+  overflow: auto;
+  min-height: 300px;
+}
+
+.album{
+  background-color: #333;
+  padding: 10px 20px;
+  border: #007bff 1px solid;
+  width: 200px;
+  float:left;
+}
+
+.row{
+  justify-content: center;
+  align-items: center;
+}
+
+
+.img-thumb-container {
+  width: 100%;
+  float: left;
+  margin-bottom:10px;
+}
+
+.album-title-container {
+  float: left;
+  width: 100%;
+  height: 46px;
+  color: #fff;
+  margin-bottom:10px;
+}
+
+.detail-album-container{
+  float:left;
+  width:100%;
+  margin-bottom:10px;
+}
+
+.album-thumb{
+  width:100%;
+}
+
+.img-thumbnail{
+  width:90px;
+  height: auto;
+  float:left;
+  margin-right: 10px;
+  border:0px;
+}
+
+.img-thumbnail-album{
+  max-height: 157px;
+  float: left;
+  margin-right: 10px;
+  border: 0px;
+}

@@ -13,7 +13,7 @@ import { album } from '../../Class/album';
 export class ArtistComponent implements OnInit {
   id: string;
   artist: Artist;
-  album: album[];
+  albums: album[];
 
   constructor( private _searchService: SearchService,
                private _route: ActivatedRoute) { }
@@ -29,10 +29,10 @@ export class ArtistComponent implements OnInit {
       });
       this._searchService.getAlbum(id)
       .subscribe(albums => {
-        this.album = albums.items;
-        console.log(this.album.length);
-        for (let i = 0; i < this.album.length; i++) {
-          console.log(this.album[i].name);
+        this.albums = albums.items;
+        console.log(this.albums.length);
+        for (let i = 0; i < this.albums.length; i++) {
+          console.log(this.albums);
         }
       });
     });
